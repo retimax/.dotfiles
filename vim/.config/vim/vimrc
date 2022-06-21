@@ -1,0 +1,150 @@
+""""""""""""""""
+"   Vim-plug   "
+""""""""""""""""
+
+" Loading vim plug (to install plugins) 
+if empty(glob('~/.vim/autoload/plug.vim'))
+        silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+""""""""""""""""""""""""""""""""
+" Declare the list of plugins. "
+""""""""""""""""""""""""""""""""
+	
+" Themes 
+Plug 'joshdick/onedark.vim'
+Plug 'dracula/vim',{'as':'dracula'}
+Plug 'morhetz/gruvbox'
+Plug 'kyoz/purify',{'rtp':'vim'}
+Plug 'rakr/vim-one',{'as':'one'}
+
+" Navigation
+Plug 'easymotion/vim-easymotion'
+Plug 'nvim-neo-tree/neo-tree.nvim'
+Plug 'christoomey/vim-tmux-navigator'
+
+" Neotree requirements
+Plug 'nvim-lua/plenary.nvim'
+Plug 'MunifTanjim/nui.nvim'
+
+" Start menu
+Plug 'echasnovski/mini.nvim',{'branch':'stable'}
+
+" Status line
+Plug 'nvim-lualine/lualine.nvim'
+
+" Icons
+Plug 'kyazdani42/nvim-web-devicons'
+
+" Autocomplete
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
+
+" Autopair characters
+Plug 'jiangmiao/auto-pairs'
+
+" HTML & CSS plugin
+Plug 'mattn/emmet-vim'
+
+" More colors in code
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" See buffs 
+Plug 'nanozuki/tabby.nvim'
+
+" Telescope
+Plug 'sharkdp/fd' 
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+" Live server
+Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
+
+" Git incorporation
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+"""""""""""""""""""""""""""
+"         Settings        "
+"""""""""""""""""""""""""""
+
+" Basic
+syntax on
+set number
+set numberwidth=1
+set relativenumber
+set mouse=a
+set encoding=utf-8
+set ruler
+set sw=2
+
+" Colors and theme
+colorscheme one
+set background=dark
+
+" Setting true colors from terminal
+if (has("termguicolors"))
+  set termguicolors
+endif 
+
+" Setting up Lualine
+lua << END
+require('lualine').setup()
+END
+
+" Loading buffbar
+lua << END
+require("tabby").setup()
+END
+
+"""""""""""""""""""
+"     Mapping     "
+"""""""""""""""""""
+
+" Super key
+let mapleader = " "
+
+" easymotion
+nmap <Leader>s <Plug>(easymotion-s2)
+
+" Nerdtree
+nmap <Leader>nt :Neotree<CR>
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" Split,unsplit 
+nmap <leader>h :sp<cr>
+nmap <leader>v :vsp<cr>
+nmap <leader>o :on<cr>
+
+" Move to previous/next bufferline
+nmap <leader>tn :tabn<CR>
+nmap <leader>tp :tabp<CR>
+
+" Create/delete bufferline spaces
+nmap <leader>ta :$tabnew<CR>
+nmap <leader>tc :$tabclose<CR>
+
+" Save
+nmap <Leader>w :w<CR>
+
+" Quit
+nmap <Leader>q :q<CR>
