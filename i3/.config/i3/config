@@ -13,7 +13,6 @@ exec --no-startup-id dex --autostart --environment i3
 
 # Lock screen
 exec --no-startup-id betterlockscreen -w dim
-exec --no-startup-id source ~/.fehbg
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -37,8 +36,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Screenshot
-bindsym Print exec scrot /home/rolka/Images/Screenshots/screenshot.jpg
-bindsym $mod+ Shift + Print exec scrot -s /home/rolka/Images/Screenshots/screenselect.jpg
+bindsym Print exec scrot ~/Images/Screenshots/screenshot.jpg
+bindsym $mod+ Shift + Print exec scrot -s ~/Images/Screenshots/screenselect.jpg
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -197,7 +196,7 @@ bindsym $mod+ shift + plus gaps outer current plus 5
 bindsym $mod+ shift + minus gaps outer current minus 5
 
 # Powermenu
-bindsym $mod+ x exec /home/rolka/.local/bin/powermenu
+bindsym $mod+ x exec ~/.local/bin/powermenu
 
 # Betterlockscreen
 bindsym $mod+ z exec betterlockscreen -l dim --off 40
