@@ -4,7 +4,7 @@ Those are my personal dotfiles buld in Arch Linux, nowadays i'm using i3wm with 
 ## INSTALLATION(Arch Based)
 Here you can find a script to auto install this configuration, you only need to do this:
 
-`python script.py`
+`python3 script.py`
  
  But if you want you can do it manually, just clone this repo and copy whatever file you want on your 
  .config file (usually is in this directory: **~/.config**)
