@@ -11,9 +11,11 @@ Here you can find a script to auto install this configuration, you only need to 
  
  ## GALLERY
  **I3:**
+ 
  ![](https://github.com/retimax/.dotfiles/blob/main/.screenshots/i3wm.jpg)
  
  **Nvim:**
+ 
  ![](https://github.com/retimax/.dotfiles/blob/main/.screenshots/Nvim.jpg)
  
  ## Credits
