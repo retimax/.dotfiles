@@ -187,7 +187,6 @@ for_window [class="obs"] move to workspace $ws6
 exec setxkbmap latam
 exec picom --no-vsync -b -f
 exec nitrogen --restore
-exec python3 ~/.config/bin/htbstatus.py
 
 bindsym $mod+ plus gaps inner current plus 5
 bindsym $mod+ minus gaps inner current minus 5
