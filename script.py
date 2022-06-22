@@ -54,7 +54,7 @@ def menu():
         exit()
 
 def instalar():
-    os.system('sudo pacman -S i3-wm i3-gaps git neovim zsh oh-my-zsh kitty rofi curl udiskie nitrogen thunar xorg-init pulseaudio exa bat lsd nerd-fonts-ubuntu-mono ttf-font-awesome vlc spotify discord lxappearance firefox cava polybar gtk3')
+    os.system('sudo pacman -S i3-wm i3-gaps git neovim zsh oh-my-zsh kitty rofi curl udiskie nitrogen thunar xorg-init pulseaudio exa bat lsd nerd-fonts-ubuntu-mono ttf-font-awesome vlc spotify discord lxappearance firefox cava polybar obs gtk3 betterlockscreen brightnessctl playerctl')
     os.system('git clone https://github.com/retimax/.dotfiles.git /home/$USER/dotfiles-rolka')
     os.system('rm -r /home/$USER/.config/i3')
     os.system('cp -r i3/.config/i3 /home/$USER/.config')
@@ -64,6 +64,9 @@ def instalar():
     os.system('cp -r vim/.config/vim /home/$USER/.config')
     os.system('cp -r polybar/.config/polybar /home/$USER/.config')
     os.system('rm -r /home/$USER/.zshrc')
+    os.system('cp -r powermenu ~/.local/bin/')
+    os.system('mkdir ~/.config/bin')
+    os.system('cp -r htbstatus.py ~/.config/bin')
     os.system('git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting')
     os.system('git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions')
     os.system('cp -r zsh/.zshrc /home/$USER/')
