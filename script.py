@@ -66,7 +66,7 @@ def instalar():
     os.system('rm -r /home/$USER/.zshrc')
     os.system('cp -r powermenu ~/.local/bin/')
     os.system('mkdir ~/.config/bin')
-    os.system('cp -r htbstatus.py ~/.config/bin')
+    os.system('cp -r htbstatus.sh ~/.config/bin')
     os.system('git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting')
     os.system('git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions')
     os.system('cp -r zsh/.zshrc /home/$USER/')
