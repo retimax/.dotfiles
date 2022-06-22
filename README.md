@@ -21,6 +21,6 @@ Here you can find a script to auto install this configuration, you only need to 
  ## Credits
  I've copy paste the script from this repo 
  **https://github.com/Nimeavles/Qtile-installation-tool**
- but obiously addaptin it to i3wm
+ but obiously addapting it to i3wm
  
  # LONG LIVE ARCH
