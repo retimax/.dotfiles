@@ -1,5 +1,5 @@
 # DOTFILES
-Those are my personal dotfiles buld in Arch Linux, nowadays i'm using i3wm with polybar integrated and a few more details that you can see in this repo
+Those are my personal dotfiles build in Arch Linux, nowadays i'm using i3wm with polybar integrated and a few more details that you can see in this repo
 
 ## INSTALLATION(Arch Based)
 Here you can find a script to auto install this configuration, you only need to do this:
