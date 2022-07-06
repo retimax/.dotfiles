@@ -3,6 +3,7 @@ Those are my personal dotfiles build in Arch Linux, nowadays i'm using i3wm with
 
 ## INSTALLATION(Arch Based)
 **You can use Stow to install all my dotfiles, just need to do this:**
+
 Install stow and more needed packpages (Arch only):
 ```bash
   sudo pacman -S stow polybar rofi python-pip kitty vim neovim picom
@@ -10,6 +11,7 @@ Install stow and more needed packpages (Arch only):
   sudo pip3 install pywal
 ```
 Clone this repository using git clone:
+
 `git clone https://github.com/retimax/.dotfiles.git`
 
 Go to the repo directory and make symbolyc links to all the config with this commands:
