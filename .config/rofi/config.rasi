@@ -1,0 +1,9 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+}
+
+@theme "style_7.rasi"
+@import "~/.cache/wal/colors-rofi-dark"

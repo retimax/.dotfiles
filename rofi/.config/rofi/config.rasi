@@ -1,8 +1,0 @@
-/** Basic config file **/
-
-@theme "/home/rolka/.config/rofi/dracula.rasi"
-
-configuration {
-  show-icons:         true;
-  icon-theme:         "Papirus";
-}
