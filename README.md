@@ -21,4 +21,8 @@ Go to the repo directory and make symbolyc links to all the config with this com
  But if you want you can do it manually, just clone this repo and copy whatever file you want on your 
  .config file (usually is in this directory: **~/.config**)
  
+ # Gallery
+ ![](https://github.com/retimax/.dotfiles/blob/main/.screenshots/View1.jpg)
+ ![](https://github.com/retimax/.dotfiles/blob/main/.screenshots/View2.jpg)
+ 
  # LONG LIVE ARCH
