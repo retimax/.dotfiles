@@ -1,27 +1,38 @@
-" Super key
+"   _                
+"  | |_ ___ _ _ ___ 
+"  | '_| -_| | |_ -|
+"  |_,_|___|_  |___|
+"          |___|   
+"  
+
+
+" -> Super key
 let mapleader = " "
 
-" easymotion
+" -> easymotion
 nmap <Leader>s <Plug>(easymotion-s2)
 
-" Nerdtree
+" -> Nerdtree
 nmap <Leader>nt :NERDTree %<CR>
-nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-n> :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-" Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+" -> Markdown 
+nmap <C-s> <Plug>MarkdownPreview
+
+" -> Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files hidden=true<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-" Split,unsplit 
+" -> Split,unsplit 
 nmap <leader>h :sp<cr>
 nmap <leader>v :vsp<cr>
 nmap <leader>o :on<cr>
 
-" Move into tabs with tabline
+" -> Move into tabs with tabline
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3
@@ -36,8 +47,8 @@ nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
 
 
-" Save
+" -> Save
 nmap <Leader>w :w<CR>
 
-" Quit
+" -> Quit
 nmap <Leader>q :q<CR>

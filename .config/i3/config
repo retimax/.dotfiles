@@ -207,6 +207,7 @@ smart_borders on
 border_radius 5
 
 for_window [class="Nitrogen" instance="nitrogen"] floating enable
+for_window [class="VirtualBox Manager" instance="VirtualBox Manager"] floating enable
 
 # Border of active windows
 for_window [class="^.*"] border pixel 2

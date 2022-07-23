@@ -1,6 +1,9 @@
-"""""""""""""""""""""""""""
-"         Settings        "
-"""""""""""""""""""""""""""
+"       _               
+"   _ _|_|_____ ___ ___ 
+"  | | | |     |  _|  _|
+"   \_/|_|_|_|_|_| |___|
+"                     
+
 " Basic
 syntax enable
 set number
@@ -22,5 +25,3 @@ set background=dark
 if (has("termguicolors"))
   set termguicolors
 endif 
-
-

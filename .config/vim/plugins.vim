@@ -1,6 +1,12 @@
-"""""""""""""""
-"   Vim-plug   "
-""""""""""""""""
+"          _                   _             
+"         (_)                 | |            
+"   __   ___ _ __ ___    _ __ | |_   _  __ _ 
+"   \ \ / / | '_ ` _ \  | '_ \| | | | |/ _` |
+"    \ V /| | | | | | | | |_) | | |_| | (_| |
+"     \_/ |_|_| |_| |_| | .__/|_|\__,_|\__, |
+"                       | |             __/ |
+"                       |_|            |___/
+
 
 " Loading vim plug (to install plugins) 
 if empty(glob('~/.config/vim/autoload/plug.vim'))
@@ -22,6 +28,9 @@ Plug 'dracula/vim',{'as':'dracula'}
 Plug 'morhetz/gruvbox'
 Plug 'kyoz/purify',{'rtp':'vim'}
 Plug 'rakr/vim-one',{'as':'one'}
+
+" Markdown live preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 " Navigation
 Plug 'easymotion/vim-easymotion'
