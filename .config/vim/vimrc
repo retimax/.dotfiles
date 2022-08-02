@@ -18,8 +18,7 @@ so ~/.config/vim/keys.vim
 so ~/.config/vim/plugins-conf.vim
 
 " Colors and theme
-colorscheme one
-set background=dark
+colorscheme nord
 
 " Setting true colors from terminal
 if (has("termguicolors"))

@@ -183,7 +183,7 @@ for_window [class="obs"] move to workspace $ws6
 # autostart
 exec setxkbmap latam
 exec picom --no-vsync -b -f
-exec_always --no-startup-id "wal -i ${HOME}/Pictures/Random/ -o wal-set"
+exec_always --no-startup-id "wal -i ${HOME}/Pictures/Nord-Wallpapers/wallpapers/51.png -o wal-set"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 bindsym $mod+ plus gaps inner current plus 5

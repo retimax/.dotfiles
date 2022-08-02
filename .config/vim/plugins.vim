@@ -28,6 +28,9 @@ Plug 'dracula/vim',{'as':'dracula'}
 Plug 'morhetz/gruvbox'
 Plug 'kyoz/purify',{'rtp':'vim'}
 Plug 'rakr/vim-one',{'as':'one'}
+Plug 'marko-cerovac/material.nvim'
+Plug 'tiagovla/tokyodark.nvim'
+Plug 'arcticicestudio/nord-vim'
 
 " Markdown live preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
